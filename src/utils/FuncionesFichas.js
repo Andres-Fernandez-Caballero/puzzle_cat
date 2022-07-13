@@ -27,11 +27,12 @@ export const estaresuelto = (listadefichas) => {
 
 export const getmatrizposicion = (indice) => {
  return {
-  fila: Math.floor(indice/4), columna:(indice%4)
+    fila: Math.floor(indice / 4), 
+    columna:(indice % 4)
  }
 }
 
-export const getindice = (fila,columna) => {
+export const getindice = (fila, columna) => {
   return parseInt(fila,10)*4+ parseInt(columna,10)
 }
 
