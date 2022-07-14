@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {getmatrizposicion} from './../utils/FuncionesFichas'
 
 
@@ -9,12 +9,15 @@ export const FichaV2 = (props) => {
     const image = props.image
     const handleOnClickFicha = props.handleOnClickFicha
 
-    const posicion = getmatrizposicion(index);
+    const posicion = getmatrizposicion(ficha);
 
-    const styleFicha = {
+
+    let  styleFicha = {
         opacity: ficha === 15 ? 0 : 1,
 
-        //https://descargarfondos.com/wp-content/uploads/gato2.jp 1)}% ${25 * (posicion.fila + 1)}%`,
+        //https://descargarfondos.com/wp-content/uploads/gato2.jpg
+        backgroundImage: `url(${image}) `,
+        backgroundPosition: `${25 * (posicion.columna + 1)}% ${25 * (posicion.fila + 1)}%`,
         backgroundSize: '360px 360px',
         backgroundRepeat: 'no-repeat',
     }

@@ -22,72 +22,18 @@
     
   }
 
-  .grid-1 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 0% 0%;
+  .btn {
+    background-color: #c44f4f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    opacity: 0.7;
   }
 
-  .grid-2 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 25% 0%;
+  .btn:hover {
+    opacity: 1;
+    cursor: pointer;
   }
-
-  .grid-3 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 50% 0%;
-  }
-  
-  .grid-4 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 75% 0%;
-  }
-
-  .grid-5 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 0% 25%;
-  }
-
-  .grid-6 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 25% 25%;
-  }
-
-  .grid-7 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 50% 25%;
-  }
-
-  .grid-8 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 75% 25%;
-  }
-
-  .grid-9 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 0% 50%;
-  }
-
-
-  .grid-10 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 25% 50%;
-  }
-
-  .grid-11 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 50% 50%;
-  }
-
-  .grid-12 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 75% 50%;
-  }
-
-  .grid-13 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 0% 75%;
-  }
-
-  .grid-14 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 25% 75%;
-  }
-
-  .grid-15 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 50% 75%;
-  }
-
-  .grid-16 {
-    background: #2196F3 url('/public/logo512.png') no-repeat scroll 75% 75%;
-  }
-
-  
-
-  
 
