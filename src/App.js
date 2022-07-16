@@ -1,4 +1,3 @@
-import { Tablero } from "./components/Tablero";
 import { TableroV2 } from "./components/TableroV2";
 import gatito from './gatito.jpg';
 
