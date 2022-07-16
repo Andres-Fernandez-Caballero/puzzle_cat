@@ -4,7 +4,7 @@ export const mezclarfichas = (listadefichas) => {
     const casillerovacio = listadefichas.length-1
     const listadefichasmezclada = [
         ...listadefichas
-            .filter(ficha => ficha != casillerovacio)
+            .filter(ficha => ficha !== casillerovacio)
             .sort(() => Math.random()-0.5),
         casillerovacio
     ]
@@ -22,7 +22,7 @@ const puederesolverse = (listadefichas)=>{
 }
 
 export const estaresuelto = (listadefichas) => {
-    return listadefichas.every((ficha,posicion)=> ficha==posicion)
+    return listadefichas.every((ficha,posicion)=> ficha === posicion)
 }
 
 export const getmatrizposicion = (indice) => {
@@ -37,11 +37,11 @@ export const getindice = (fila, columna) => {
 }
 
 export const puedomover = (posicioninicial, posicionfinal) => {
-  const casillerovacio = 15;
+
   const matrizinicial = getmatrizposicion(posicioninicial);
   const matrizfinal = getmatrizposicion(posicionfinal);
 
-  return Math.abs(matrizinicial.fila-matrizfinal.fila) + Math.abs(matrizinicial.columna-matrizfinal.columna)===1
+  return Math.abs(matrizinicial.fila-matrizfinal.fila) + Math.abs(matrizinicial.columna-matrizfinal.columna) === 1
 }
 
 export const mover = (fichas,posiciondeinicio,posiciondedestino) => {
