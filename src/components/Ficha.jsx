@@ -1,9 +1,10 @@
 import React from 'react'
-import { Motion, spring } from 'react-motion'
+//import { Motion, spring } from 'react-motion'
 import { getmatrizposicion, getposicionvisual } from '../utils/FuncionesFichas'
 
 export const Ficha = (props) => {
-    const ficha = props.ficha
+  /* 
+  const ficha = props.ficha
     const index = props.index
 
     const matriz = getmatrizposicion(index);
@@ -40,5 +41,6 @@ export const Ficha = (props) => {
       </li>
     )}
     </Motion>
-  )
+  )*/
+  return (<div>Hola</div>)
 }
