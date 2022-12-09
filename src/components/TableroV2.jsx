@@ -1,18 +1,20 @@
-import React, { useState } from "react";
 import "./TableroV2.css";
+import React, { useState } from "react";
 import { FichaV2 } from "./FichaV2";
+import { useEffect } from "react";
 import {
   estaresuelto,
   mezclarfichas,
   mover,
   puedomover,
 } from "../utils/FuncionesFichas";
-import { useEffect } from "react";
 
 export const TableroV2 = (props) => {
   const [fichas, setfichas] = useState([
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
   ]);
+
+  const [juegoIniciado, setJuegoIniciado] = useState(false);
 
   const image = props.image;
 
@@ -29,11 +31,12 @@ export const TableroV2 = (props) => {
 
   useEffect(() => {
     setfichas(mezclarfichas(fichas));
+    setJuegoIniciado(true);
   }, []);
 
   useEffect(() => {
-    if (estaresuelto(fichas)) alert("Ganaste 😆");
-  }, [fichas]);
+    if (estaresuelto(fichas) && juegoIniciado) alert("Ganaste 😆");
+  }, [fichas, juegoIniciado]);
 
   return (
     <div>
