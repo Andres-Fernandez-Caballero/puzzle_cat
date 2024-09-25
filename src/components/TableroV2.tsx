@@ -9,7 +9,10 @@ import {
   puedomover,
 } from "../utils/FuncionesFichas";
 
-export const TableroV2 = (props) => {
+interface TableroV2Props {
+  image: string;
+}
+export const TableroV2 = (props: TableroV2Props) => {
   const [fichas, setfichas] = useState([
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
   ]);
@@ -22,7 +25,7 @@ export const TableroV2 = (props) => {
     setfichas(mezclarfichas(fichas));
   };
 
-  const handleOnClickFicha = (index) => {
+  const handleOnClickFicha = (index: number) => {
     if (puedomover(index, fichas.indexOf(15))) {
       const fichasMovidas = mover(fichas, index, fichas.indexOf(15));
       setfichas(fichasMovidas);

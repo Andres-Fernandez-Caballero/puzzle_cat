@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2020",                                  /* Establece la versión de JavaScript emitido a una más moderna. */
+    "lib": ["dom", "dom.iterable", "esnext"],            /* Especifica las bibliotecas para el entorno del navegador y ESNext. */
+    "jsx": "react-jsx",                                  /* Establece que JSX debe ser compilado usando el nuevo runtime de React 17+ con JSX transformado automáticamente. */
+
+    /* Modules */
+    "module": "esnext",                                  /* Usa ESNext para un mejor soporte de módulos en React. */
+    "moduleResolution": "node",                          /* Usa el resolutor de módulos de Node.js para resolver dependencias. */
+    "allowSyntheticDefaultImports": true,                /* Permite la importación de módulos CommonJS con 'import'. */
+    "esModuleInterop": true,                             /* Facilita la interoperabilidad con módulos CommonJS. */
+
+    /* Emit */
+    "sourceMap": true,                                   /* Genera mapas de origen para depuración. */
+    "noEmit": true,                                      /* No emite archivos JavaScript, solo chequea tipos. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Activa todas las opciones estrictas de TypeScript. */
+    "forceConsistentCasingInFileNames": true,            /* Asegura que la capitalización en los nombres de archivos sea consistente. */
+    "skipLibCheck": true,                                /* Omite la comprobación de bibliotecas para acelerar la compilación. */
+
+    /* Additional Options */
+    "resolveJsonModule": true,                           /* Habilita la importación de archivos JSON. */
+    "isolatedModules": true                              /* Asegura que cada archivo se puede transpilar de forma segura sin dependencias. */
+  },
+  "include": ["src", "**/*.d.ts"],                                    /* Incluye todos los archivos dentro de la carpeta src para ser verificados. */
+  "exclude": ["node_modules", "build"]                   /* Excluye node_modules y archivos compilados. */
+}
